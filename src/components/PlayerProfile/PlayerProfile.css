@@ -1,0 +1,172 @@
+.playerprofile {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.playerprofile__head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1D2333;
+    color: #F7F7FA;
+    min-height: 4rem;
+}
+
+.playerprofile__game {
+    width: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playerprofile__game h3,
+.playerprofile__gameType > * {
+    font-size: 1rem;
+    font-weight: normal;
+    border-bottom: 3px solid tomato;
+    padding: .25rem;
+}
+
+.playerprofile__gameType > * {
+    margin: 1rem;
+}
+
+.playerprofile__gameType > :nth-child(2) {
+    border: none;
+}
+.playerprofile__gameType {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerprofile__game button {
+    padding: .25rem 1rem;
+    font-weight: 700;
+    background-color: transparent;
+    color: #F7F7FA;
+    border: 2px solid #F7F7FA;
+}
+.playerprofile__name {
+    position: relative;
+}
+.playerprofile__name h1 {
+    font-size: 4rem;
+}
+.playerprofile__name button {
+    position: absolute;
+    right: 0;
+    font-size: .6rem;
+    padding: .25rem .5rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.playerprofile__main {
+    background-color: #070816;
+    color: #F8F8FD;
+}
+
+.playerprofile__nav {
+    font-size: 1.5rem;
+}
+
+.playerprofile__nav > * {
+    margin: .5rem;
+}
+
+.fill-home {
+    color: tomato;
+}
+
+.playerprofile__hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 14rem;
+}
+.playerprofile__recentGames h3 {
+    font-size: 1rem;
+}
+
+.playerprofile__games {
+    display: flex;
+}
+
+.game-container {
+    height: 6rem;
+    width: 12rem;
+    background-color: lightblue;
+    opacity: .5;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem;
+}
+.game-container:hover {
+    opacity: 1;
+    transition: .3s ease;
+}
+
+.playerprofile__statsContainer {
+    display: flex;
+    justify-content: space-around;
+    min-height: 50vh;
+    color: #FCFDFF;
+    background-color: #0E1425;
+}
+
+.playerprofile__statsContainer li {
+    list-style-type: none;
+    border-bottom: 1px solid lightblue;
+    margin: 1rem;
+    padding: .5rem;
+    min-width: 14rem;
+}
+
+.player-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 32rem;
+}
+
+.player-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.player-tier {
+    width: 14rem;
+    height: 6rem;
+    background-color: yellow;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .4;
+}
+
+@media only screen and (max-width:1024px) {
+    .playerprofile__statsContainer {
+        justify-content: space-between;
+    }
+    .playerprofile__statsContainer li {
+        min-width: 10rem;
+    }
+    .player-img {
+        width: 24rem;
+    }
+    .player-tier {
+        width: 12rem;
+    }
+    .playerprofile__name h1 {
+        font-size: 3rem;
+    }
+    .game-container {
+        height: 5rem;
+        width: 10rem;
+    }
+}

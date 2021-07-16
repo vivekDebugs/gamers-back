@@ -1,0 +1,101 @@
+.navbarhead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .25rem;
+    color: #FDFDFF;
+    background-color: #22273B;
+}
+
+.navbarhead__left,
+.navbarhead__right,
+.navbarhead__list,
+.navbarhead__user,
+.navbarhead__list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarhead__logo {
+    margin: .5rem 1rem;
+}
+
+.navbarhead__user > * {
+    margin: .5rem;
+}
+
+.navbarhead__avatar {
+    width: 5rem;
+}
+.navbarhead__user .down-arrow {
+    font-size: 2rem;
+}
+.username {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username b:nth-child(2) {
+    font-weight: normal;
+    font-size: .6rem;
+}
+
+.navbarhead__list ul {
+    list-style-type: none;
+}
+
+.navbarhead__search {
+    padding: .25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #292E3F;
+    color: #D9DCEB;
+    border-radius: 4px;
+}
+
+.navbarhead__search input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.search-icon {
+    font-size: 1rem;
+    margin: .2rem;
+    margin-right: 1.5rem;
+}
+
+.navbarhead__list li {
+    margin: .5rem;
+}
+
+.navbarhead__notif {
+    position: relative;
+}
+.notif-badge {
+    position: absolute;
+    top: -.5rem;
+    right: -.5rem;
+    min-width: 1rem;
+    font-size: .75rem;
+    color: white;
+    background-color: tomato;
+    border-radius: 50%;
+    text-align: center;
+}
+
+@media only screen and (min-width:1024px) {
+    .navbarhead__logo {
+        margin-right: 2rem;
+    }
+    .navbarhead__list li,
+    .navbarhead__list h4,
+    .navbarhead__user > * {
+        margin: .5rem 1rem;
+    }
+}
